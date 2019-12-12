@@ -2,7 +2,9 @@
 springmvc 拦截器 入门案例
 
 一、操作步骤简述：
+
     1、创建一个类 实现 HandlerInterceptor接口，并实现其方法
+    
         方法简述：
         --> preHandle：拦截请求，客户端发送请求时，首先执行的方法，返回值：true 放行，false 拦截
         --> postHandle：拦截响应，controller执行完后，响应客户端前，执行该方法
@@ -35,7 +37,9 @@ springmvc 拦截器 入门案例
 
 
 2、在 springmvc 配置文件中 配置拦截器
-全局配置，拦截全部请求
+
+    全局配置，拦截全部请求
+
 <!--配置拦截器：拦截全部请求-->
 <!--<mvc:interceptors>-->
     <!--<bean class="com.nn.interceptor.MyInterceptor"></bean>-->
